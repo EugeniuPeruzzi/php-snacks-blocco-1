@@ -75,13 +75,13 @@ Olimpia Milano - Cantù | 55-60  -->
     <title>Snack 1</title>
 </head>
 <body>
-    <h1>Ciao </h1>
-    <div>
-        <?php foreach($mathces as $match) {
+    <h2>Today's matches</h2>
+    <div class="mt-3">
+        <?php foreach($mathces as $match) {?>
 
-        }
-
-        ?>
+            <p><?php echo $match['homeTeam'].' - '.$match['away'].' | '.$match['homePoints'].' - '.$match['awayPoints']?></p>
+        
+        <?php }?>
     </div>
 
 </body>
