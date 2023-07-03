@@ -58,11 +58,15 @@ $posts = [
 </head>
 <body>
     <div class="m-5">
+        <!-- mi cilco l'array post atribuendogli il valore post con l'indice -->
         <?php foreach($posts as $index => $post) { ?>
+           <!-- stampo a schermo l'indice del array posts che in questo caso ha come valore le date in fomato DD/MM/YY -->
             <h5><?php echo $index ?></h5>
             <ul>
+                <!-- ciclo ulteriormente l'array per accendere al contenuto di post -->
                 <?php foreach ($post as $content){ ?>
                     <li>
+                        <!--  stampo a schermo richiamando il valore ciclato con la proprieta. -->
                         <h6><?php echo $content['title'] ?></h6>
                         <ul>
                             <li>

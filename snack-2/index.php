@@ -1,16 +1,17 @@
 <?php
-    $flag = false;
+    // se le variabili richiamate con GET sono diverse da 'null' entra nel if dove esegue le seguente operazioni:
     if(isset($_GET['name']) && isset($_GET['email']) && isset($_GET['eta'])){
+        // atribuisco il valore preso da GET alle variabili 
         $name = $_GET['name'];
         $email = $_GET['email'];
         $age = $_GET['eta'];
  
 
-
+        // un struttura di IF che controlano passo per passo se i dati inseri dall'utente coincido a quelle necessari
+        // altrimenti gli fa ripetere l'operazione
         if(strlen($name) >= 3){
             if(str_contains($email, '@') && str_contains($email , '.')){
                 if(is_numeric($age)){
-                    $flag = true;
                     echo 'Accesso Eseguito';
                 }
                 else{

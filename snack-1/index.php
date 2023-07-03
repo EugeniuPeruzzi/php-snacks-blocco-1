@@ -77,8 +77,9 @@ Olimpia Milano - Cantù | 55-60  -->
 <body>
     <h2>Today's matches</h2>
     <div class="mt-3">
+        <!-- ciclo l'array matchces con proprieta match  -->
         <?php foreach($mathces as $match) {?>
-
+            <!-- stampo a schedrmo i risultati delle partite con ordine da team giocato in casa a team fuori casa e punti team casa e punti team fuori casa -->
             <p><?php echo $match['homeTeam'].' - '.$match['away'].' | '.$match['homePoints'].' - '.$match['awayPoints']?></p>
         
         <?php }?>
